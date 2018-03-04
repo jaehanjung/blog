@@ -9,13 +9,16 @@ module.exports = {
       path: '',
       subMenu: [{
         title: "javascript",
-        path: "/javascript/1"
+        path: "/javascript/1",
+        color: "red"
       }, {
         title: "html/css",
-        path: "/html-css/1"
+        path: "/html-css/1",
+        color: "yellow"
       }, {
         title: "react",
-        path: "/react/1"
+        path: "/react/1",
+        color: "green"
       }]
     }]
   },

@@ -3,6 +3,10 @@ import Link from 'gatsby-link'
 import { Container } from 'react-responsive-grid'
 import Header from '../components/Header'
 import get from 'lodash/get'
+import '../assets/css/font.css'
+import '../assets/css/common.css'
+import '../assets/css/markdown.css'
+
 
 // import { rhythm, scale } from '../utils/typography'
 
@@ -12,6 +16,7 @@ class Template extends React.Component {
     menu : []
   };
   componentDidMount(){
+    console.log("data", this.props)
     let category = new Set();
     this.props.data.allMarkdownRemark.edges.forEach(({node}) => {
       category.add(node.frontmatter.category);
@@ -26,7 +31,6 @@ class Template extends React.Component {
   }
   render() {
     const { location, children } = this.props
-
     let rootPath = `/`
     if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
       rootPath = __PATH_PREFIX__ + `/`
@@ -34,10 +38,10 @@ class Template extends React.Component {
 
 
     return (
-      <Container>
+      <div>
         <Header history={this.props.history} menu={this.state.menu} category={this.state.category}/>
         {children()}
-      </Container>
+      </div>
     )
   }
 }

@@ -1,4 +1,49 @@
 import React, { Component } from 'react';
+import Link from 'gatsby-link';
+import styled from 'styled-components';
+
+const PageItem = styled(Link)`
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #EFEFEF;
+  border-radius: 50%;
+  margin: 0 5px;
+  &.active{
+    color: white;
+    background-color: #d71b22;
+  }
+`
+
+const PagiNation = styled.div`
+  text-align:center;
+  padding: 40px 0;
+  position: relative;
+  &::after{
+    content:"";
+    display:block;
+    clear:both;
+  }
+`
+
+const NextBtn = styled(Link)`
+  margin-left: 50px;
+  position: absolute;
+  right: 50px;
+`
+const PreBtn = styled(Link)`
+  margin-right: 50px;
+  position: absolute;
+  left: 50px;
+`
+
+const SpanMargin = styled.span`
+  margin: 0 10px;
+`
+
 class Pagination extends React.Component {
   render() {
     let { category, current, totalPage } = this.props;
@@ -6,6 +51,7 @@ class Pagination extends React.Component {
     totalPage = Number(totalPage);
     let pagination = [];
     let maxPageNumber = 5;
+    console.log(totalPage);
     if(totalPage < 5){
       maxPageNumber = totalPage;
     }
@@ -39,18 +85,19 @@ class Pagination extends React.Component {
     pagination.sort(function (a, b) {
       return a - b;
     });
+    console.log(pagination);
     return (
-      <div>
-        {current === 1 ? null : <Link to={`/${category}/1`}>처음으로</Link>}
-        {current === 1 ? null : <Link to={`/${category}/${current - 1}`}>이전</Link>}
+      <PagiNation>
+        {current === 1 ? null : <PreBtn to={`/${category}/${current - 1}`}>{`< previous`}</PreBtn>}
+        {current-2 <= 1 || totalPage < 6  ? null : <span><PageItem to={`/${category}/1`}>1</PageItem><SpanMargin>...</SpanMargin></span>}
         {pagination.map((item)=>{
           return (
-            item === current ? <span key={item} style={{color:"red"}}>{item}</span> : <Link to={`/${category}/${item}`} key={item}>{item}</Link>
+            item === current ? <PageItem to={`/${category}/${item}`} key={item} className="active" >{item}</PageItem> : <PageItem to={`/${category}/${item}`} key={item}>{item}</PageItem>
           )
         })}
-        {current === totalPage ? null : <Link to={`/${category}/${current + 1}`}>다음</Link>}
-        {current === totalPage ? null : <Link to={`/${category}/${totalPage}`}>마지막으로</Link>}
-      </div>
+        {current + 2  >= totalPage || totalPage < 6 ? null : <span><SpanMargin>...</SpanMargin><PageItem to={`/${category}/${totalPage}`}>{totalPage}</PageItem></span>}
+        {current === totalPage ? null : <NextBtn to={`/${category}/${current + 1}`}>{`next >`}</NextBtn>}
+      </PagiNation>
     );
   }
 }

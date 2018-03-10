@@ -1,0 +1,16 @@
+.section2 {
+    background-color: #EEEEEE;
+    /* height: 600px; */
+    padding-bottom: 100px;
+  }
+  .posts {
+    /* height: 500px; */
+    background-color: white;
+    top: 30px;
+    padding: 30px;
+  }
+  .post-title {
+    text-align: center;
+    font-size: 45px;
+    /* padding-top: 30px; */
+  }

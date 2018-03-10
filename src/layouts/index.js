@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { Container } from 'react-responsive-grid'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import get from 'lodash/get'
 import '../assets/css/font.css'
 import '../assets/css/common.css'
@@ -12,35 +13,35 @@ import '../assets/css/markdown.css'
 
 class Template extends React.Component {
   state = {
-    category : [],
-    menu : []
+    category: [],
+    menu: []
   };
-  componentDidMount(){
+  componentDidMount() {
     console.log("data", this.props)
     let category = new Set();
-    this.props.data.allMarkdownRemark.edges.forEach(({node}) => {
+    this.props.data.allMarkdownRemark.edges.forEach(({ node }) => {
       category.add(node.frontmatter.category);
     });
     this.setState({
-      category : category,
-      menu : this.props.data.site.siteMetadata.menu
+      category: category,
+      menu: this.props.data.site.siteMetadata.menu
     })
-    setTimeout(()=>{
-      console.log(this.state);
+    setTimeout(() => {
     }, 100);
   }
   render() {
-    const { location, children } = this.props
+    const { location, children } = this.props;
+    console.log(this.props);
     let rootPath = `/`
+    let isRoot = false;
     if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
       rootPath = __PATH_PREFIX__ + `/`
     }
 
-
     return (
       <div>
-        <Header history={this.props.history} menu={this.state.menu} category={this.state.category}/>
         {children()}
+        <Footer />
       </div>
     )
   }

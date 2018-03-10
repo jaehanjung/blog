@@ -2,27 +2,9 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
+import ImgHeader from '../components/ImgHeader';
+import '../assets/css/post.css'
 
-import styled from 'styled-components';
-import { Columns } from '../styled-components/grid';
-
-const Content = styled.div`
-  width: calc(100% - 70px);
-  &::after{
-    content: "";
-    display:block;
-    clear: both;
-  }
-  margin-left: 70px;
-`
-
-const Top3Column = Columns.extend`
-`
-
-const PostList = Columns.extend`
-  height: 100vh;
-  overflow-y: scroll;
-`
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
@@ -30,23 +12,14 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pathContext
 
     return (
-      <Content>
-      <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <Top3Column xs={12} sm={12} md={4} lg={3.5}>
-          <h1>{post.frontmatter.title}</h1>
-          <p
-          style={{
-            display: 'block',
-            marginBottom: "2rem",
-            marginTop: "1rem",
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
-        </Top3Column>
-        <PostList xs={12} sm={12} md={8} lg={8.5}>
-        <div className="markdown-body" dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
+
+      <div>
+        <ImgHeader />
+        <div className="section section2">
+          <div className="posts content clearfix">
+              <h2 className="post-title">Full Width Template</h2>
+              <div className="markdown-body" dangerouslySetInnerHTML={{ __html: post.html }} />
+              <hr
           style={{
             marginBottom: "2rem",
           }}
@@ -77,8 +50,10 @@ class BlogPostTemplate extends React.Component {
             </li>
           )}
         </ul>
-        </PostList>
-      </Content>
+          </div>
+        </div>
+        
+      </div>
     )
   }
 }

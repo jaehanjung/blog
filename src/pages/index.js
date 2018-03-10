@@ -1,37 +1,21 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
-import get from 'lodash/get';
-import Top3Post from '../components/Top3Post';
+import PostCard from '../components/PostCard';
 import Pagination from '../components/Pagination';
-import PostListItem from '../components/PostListItem';
-import styled from 'styled-components';
-import { Columns } from '../styled-components/grid';
+import BgImg from '../assets/images/bg-img.png';
+import Header from '../components/Header';
 
-const Content = styled.div`
-  width: calc(100% - 70px);
-  &::after{
-    content: "";
-    display:block;
-    clear: both;
-  }
-  margin-left: 70px;
-`
 
-const Top3Column = Columns.extend`
-`
 
-const PostList = Columns.extend`
-  height: 100vh;
-  overflow-y: scroll;
-`
+
 class BlogList extends React.Component {
   state = { color: "red" }
-  componentDidMount(){
-    this.props.data.site.siteMetadata.menu.map(({subMenu})=>{
+  componentDidMount() {
+    this.props.data.site.siteMetadata.menu.map(({ subMenu }) => {
       return (
-        subMenu.map((item)=>{
-          if(item.title === this.props.pathContext.category){
-            this.setState({color: item.color});
+        subMenu.map((item) => {
+          if (item.title === this.props.pathContext.category) {
+            this.setState({ color: item.color });
           }
         })
       )
@@ -39,26 +23,36 @@ class BlogList extends React.Component {
     console.log(this.color);
   }
   render() {
-    const {pathContext, data} = this.props;
-    const {allMarkdownRemark} = data;
-    const {edges} = allMarkdownRemark;
+    const { pathContext, data } = this.props;
+    const { allMarkdownRemark } = data;
+    const { edges } = allMarkdownRemark;
+    console.log(edges);
     return (
-      <Content>
-        <Top3Column xs="none" sm="none" md={4} lg={3.5}>
-          <Top3Post/>
-        </Top3Column>
-        <PostList xs={12} sm={12} md={8} lg={8.5}>
-          {edges.map(({node}, index)=>{
-            return (<PostListItem key={`item${index}`}
-                                  title={node.frontmatter.title}
-                                  content={node.excerpt}
-                                  date={node.frontmatter.date}
-                                  slug={node.fields.slug}
-                                  category={node.frontmatter.category}
-                                  categoryColor={this.state.color}/>)
-          })}
-        </PostList>
-      </Content>
+      <div>
+        <Header />
+        <div className="section section1 main-slider" style={{backgroundImage: `url(${BgImg})`}}>
+          <div className="main-header-title">
+            <h2>WelCome! han.Blog</h2>
+            <p>
+              <a href="https://github.com/jaehanjung" className="fab fa-github git-button">GitHub</a>
+            </p>
+            <Link className="about-btn" to="/about">About Me</Link>
+            <div className="bgi-button">
+              <button className="left-button"></button>
+              <button className="center-button"></button>
+              <button className="right-button"></button>
+            </div>
+          </div>
+        </div>
+        <div className="section section2 clearfix">
+          <div className="card-more content">
+            { edges.map((item)=>{
+              console.log("item", item.node.frontmatter.title);
+              return (<PostCard title={item.node.frontmatter.title} content={item.node.excerpt} link={item.node.fields.slug}/>)
+            })}
+          </div>
+        </div>
+      </div>
     );
   }
 }

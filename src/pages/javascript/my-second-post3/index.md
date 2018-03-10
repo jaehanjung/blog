@@ -1,7 +1,7 @@
 ---
 title: My Second Post3!
 date: "2015-05-06T23:46:37.121Z"
-category: "javascript"
+category: "react"
 ---
 
 Wow! I love blogging so much already.

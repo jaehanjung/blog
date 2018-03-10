@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+/* CSS reset */
+
+h1, h2, h3, h4, h5, h6, p, ul, button {
+  margin: 0;
+  padding: 0;
+}
+img {
+  /* vertical-align: top; */
+}
+li {
+  list-style: none;
+}
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* 링크 스타일 */
+
+a {
+  text-decoration: none;
+}
+
+/* 공통 스타일 */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.content {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+.floats {
+  float: left;
+}
+
+/* 숨김 콘텐츠 */
+
+.readable-hidden, .a11y, legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* 나중에 지울거 */
+
+.section {
+  position: relative;
+  /* background-color: yellow; */
+}
+.section:nth-of-type(2n) {
+  /* background-color: gray; */
+}
+
+/* 본문 스타일 */
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* section1 영역 */
+
+.header.content.notRoot {
+  /* background-color: green; */
+  width: 80%;
+  height: 70px;
+  /* top: 10px; */
+  position: relative;
+  left: 0;
+  transform: none;
+  color: black;
+}
+.notRoot .logo {
+  float: left;
+  margin-top: 8px;
+}
+.notRoot .logo-alink {
+  color: black;
+}
+.menu {
+  float: right;
+  text-align: center;
+}
+.menu-bar li {
+  margin-top: 20px;
+}
+.menu-bar img {
+  width: 20px;
+  height: 20px;
+  /* position: absolute; */
+  /* right: 53px; */
+  top: 50%;
+  transform: translateY(17%);
+}
+.notRoot .menu-bar a {
+  text-decoration: none;
+  transform: translate(0, -50%);
+  font-size: 20px;
+  color: black;
+}
+
+/* section2 영역 */
+
+.section2 {
+  background-color: #EEEEEE;
+  /* height: 600px; */
+  padding-bottom: 85px;
+}
+.about {
+  /* height: 500px; */
+  background-color: white;
+  top: 30px;
+  padding: 30px;
+}
+.about-img {
+  text-align: center;
+  float: left;
+}
+.about-img img {
+  width: 100%;
+  /* overflow: hidden; */
+}
+.about-title {
+  /* text-align: center; */
+  float: right;
+  width: 75%;
+  /* padding-top: 30px; */
+}
+.about-title h2 {
+  font-size: 45px;
+}
+.about-title span {
+  display: block;
+}
+.about-title p {
+  /* width: 900px; */
+  padding-top: 20px;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* section3 영역 */
+
+.section3 {
+  /* height: 100px; */
+  border-top: 1px solid #c5c5c5;
+}
+.footer {
+  text-align: center;
+  margin: 0;
+  padding: 50px;
+  font-size: 22px;
+}

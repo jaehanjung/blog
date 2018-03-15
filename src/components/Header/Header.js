@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link'
 
 class Header extends React.Component {
+  state = {
+    isActive : false
+  }
+  navClass = null
   componentDidMount() {
-    let slidebar = document.querySelector(".menu");
     slidebar.addEventListener("click", function () {
       document.querySelector(".menu-slide").classList.add("active")
     });
@@ -13,6 +16,10 @@ class Header extends React.Component {
       // document.querySelector(".menu-slide").style.marginLeft = 100 + "px"
       document.querySelector(".menu-slide").classList.remove("active")
     })
+  }
+
+  handleMenu = ()=>{
+    this.setState({isActive: !this.state.isActive});
   }
   render() {
     let HeaderName = null;
@@ -27,7 +34,7 @@ class Header extends React.Component {
           <a className="logo-alink" href="/">
             <h1 className="logo">han.log</h1>
           </a>
-          <div className="menu">
+          <div className="menu" onClick={this.handleMenu}>
             <ul className="menu-bar">
               <li>
                 <a href="#">
@@ -38,7 +45,7 @@ class Header extends React.Component {
             </ul>
           </div>
         </header>
-        <div className="menu-slide">
+        <div className={`menu-slide ${this.state.isActive === true ? "active" : null}`}>
           <ul className="menu-slide-bar clearfix">
             <li><a href="#" className="closebtn">&times;</a></li>
             <li><Link to="/html-css/1">HTML/CSS</Link></li>

@@ -14,7 +14,6 @@ class BlogList extends React.Component {
     const { pathContext, data } = this.props;
     const { allMarkdownRemark } = data;
     const { edges } = allMarkdownRemark;
-    console.log("edges", edges);
     return (
       <div>
         <ImgHeader />

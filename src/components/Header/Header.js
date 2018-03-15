@@ -6,20 +6,12 @@ class Header extends React.Component {
     isActive : false
   }
   navClass = null
-  componentDidMount() {
-    slidebar.addEventListener("click", function () {
-      document.querySelector(".menu-slide").classList.add("active")
-    });
-
-    let close_btn = document.querySelector(".closebtn");
-    close_btn.addEventListener("click", function () {
-      // document.querySelector(".menu-slide").style.marginLeft = 100 + "px"
-      document.querySelector(".menu-slide").classList.remove("active")
-    })
-  }
 
   handleMenu = ()=>{
     this.setState({isActive: !this.state.isActive});
+  }
+  handleClose = ()=> {
+    this.setState({isActive: false});
   }
   render() {
     let HeaderName = null;
@@ -47,7 +39,7 @@ class Header extends React.Component {
         </header>
         <div className={`menu-slide ${this.state.isActive === true ? "active" : null}`}>
           <ul className="menu-slide-bar clearfix">
-            <li><a href="#" className="closebtn">&times;</a></li>
+            <li><a href="#" className="closebtn" onClick={this.handleClose}>&times;</a></li>
             <li><Link to="/html-css/1">HTML/CSS</Link></li>
             <li><Link to="/javascript/1">JavaScript</Link></li>
             {/* <li><Link to="#">React</Link></li> */}

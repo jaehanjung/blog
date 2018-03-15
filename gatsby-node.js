@@ -134,7 +134,6 @@ exports.createPages = ({ graphql, boundActionCreators, page }) => {
           }
           // Create blog posts pages.
           const s = new Set();
-          console.log(s);
           _.each(result.data.allMarkdownRemark.edges, edge => {
             s.add(edge.node.frontmatter.category)
           })

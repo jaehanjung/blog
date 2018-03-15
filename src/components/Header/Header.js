@@ -30,8 +30,8 @@ class Header extends React.Component {
             <ul className="menu-bar">
               <li>
                 <a href="#">
-                  <img src="./img/noun_100552_cc.png" alt="" />
-                  <a href="#">Menu</a>
+                  {/* <img src="./img/noun_100552_cc.png" alt="" /> */}
+                  <span>Menu</span>
                 </a>
               </li>
             </ul>
@@ -39,7 +39,7 @@ class Header extends React.Component {
         </header>
         <div className={`menu-slide ${this.state.isActive === true ? "active" : null}`}>
           <ul className="menu-slide-bar clearfix">
-            <li><a href="#" className="closebtn" onClick={this.handleClose}>&times;</a></li>
+            <li><Link className="closebtn" onClick={this.handleClose}>&times;</Link></li>
             <li><Link to="/html-css/1">HTML/CSS</Link></li>
             <li><Link to="/javascript/1">JavaScript</Link></li>
             {/* <li><Link to="#">React</Link></li> */}

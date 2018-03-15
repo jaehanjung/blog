@@ -17,7 +17,6 @@ class Template extends React.Component {
     menu: []
   };
   componentDidMount() {
-    console.log("data", this.props)
     let category = new Set();
     this.props.data.allMarkdownRemark.edges.forEach(({ node }) => {
       category.add(node.frontmatter.category);
@@ -31,7 +30,6 @@ class Template extends React.Component {
   }
   render() {
     const { location, children } = this.props;
-    console.log(this.props);
     let rootPath = `/`
     let isRoot = false;
     if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {

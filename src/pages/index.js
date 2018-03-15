@@ -20,7 +20,6 @@ class BlogList extends React.Component {
         })
       )
     })
-    console.log(this.color);
   }
   render() {
     const { pathContext, data } = this.props;

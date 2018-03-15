@@ -51,7 +51,6 @@ class Pagination extends React.Component {
     totalPage = Number(totalPage);
     let pagination = [];
     let maxPageNumber = 5;
-    console.log(totalPage);
     if(totalPage < 5){
       maxPageNumber = totalPage;
     }
@@ -85,7 +84,6 @@ class Pagination extends React.Component {
     pagination.sort(function (a, b) {
       return a - b;
     });
-    console.log(pagination);
     return (
       <PagiNation>
         {current === 1 ? null : <PreBtn to={`/${category}/${current - 1}`}>{`< previous`}</PreBtn>}

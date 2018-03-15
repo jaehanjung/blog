@@ -2,6 +2,7 @@
 title: My Second Post2!
 date: "2015-05-07T23:46:37.121Z"
 category: "javascript"
+thumbnail:
 ---
 
 Wow! I love blogging so much already.

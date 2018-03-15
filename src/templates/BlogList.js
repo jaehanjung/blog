@@ -20,7 +20,7 @@ class BlogList extends React.Component {
         <div className="section section2">
           <div className="posts content clearfix">
             {edges.map((item, index) => {
-              return (<PostCard key={`postcard${index}`} title={item.node.frontmatter.title} content={item.node.excerpt} link={item.node.fields.slug} />)
+              return (<PostCard key={`postcard${index}`} title={item.node.frontmatter.title} content={item.node.excerpt} link={item.node.fields.slug} thumbnail={item.node.frontmatter.thumbnail} />)
             })}
           </div>
         </div>
@@ -56,6 +56,9 @@ query BlogPostByList($category: String!, $skip: Int!, $postLimit: Int!) {
           title
           date(formatString: "YYYY-MM-DD")
           category
+          thumbnail{
+            publicURL
+          }
         }
       }
     }

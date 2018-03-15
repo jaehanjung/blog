@@ -46,9 +46,9 @@ class BlogList extends React.Component {
         </div>
         <div className="section section2 clearfix">
           <div className="card-more content">
-            { edges.map((item)=>{
+            { edges.map((item, index)=>{
               console.log("item", item.node.frontmatter.title);
-              return (<PostCard title={item.node.frontmatter.title} content={item.node.excerpt} link={item.node.fields.slug}/>)
+              return (<PostCard key={`postcard${index}`} title={item.node.frontmatter.title} content={item.node.excerpt} link={item.node.fields.slug}/>)
             })}
           </div>
         </div>

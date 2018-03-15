@@ -20,8 +20,8 @@ class BlogList extends React.Component {
         <ImgHeader />
         <div className="section section2">
           <div className="posts content clearfix">
-            {edges.map((item) => {
-              return (<PostCard title={item.node.frontmatter.title} content={item.node.excerpt} link={item.node.fields.slug} />)
+            {edges.map((item, index) => {
+              return (<PostCard key={`postcard${index}`} title={item.node.frontmatter.title} content={item.node.excerpt} link={item.node.fields.slug} />)
             })}
           </div>
         </div>

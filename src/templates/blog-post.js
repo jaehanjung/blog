@@ -17,7 +17,7 @@ class BlogPostTemplate extends React.Component {
         <ImgHeader />
         <div className="section section2">
           <div className="posts content clearfix">
-              <h2 className="post-title">Full Width Template</h2>
+              <h2 className="post-title">{post.frontmatter.title}</h2>
               <div className="markdown-body" dangerouslySetInnerHTML={{ __html: post.html }} />
               <hr
           style={{
@@ -52,7 +52,7 @@ class BlogPostTemplate extends React.Component {
         </ul>
           </div>
         </div>
-        
+
       </div>
     )
   }

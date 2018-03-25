@@ -2,7 +2,7 @@
 title: 18.03.19 쉘과 명령어 1일차
 date: "2018-03-19"
 category: "TIL"
-thumbnail:
+thumbnail: "./TIL.jpg"
 ---
 
 ## 쉘과 명령어

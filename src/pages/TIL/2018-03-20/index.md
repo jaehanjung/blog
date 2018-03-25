@@ -1,8 +1,8 @@
 ---
-title: 18.03.19 쉘과 명령어 1일차
-date: "2018-03-19"
+title: 18.03.20 Markdown,git 초기설정 2일차
+date: "2018-03-20"
 category: "TIL"
-thumbnail:
+thumbnail: "./TIL.jpg"
 ---
 
 Markdown
@@ -166,7 +166,7 @@ github 안에서 편집하는방법
 
 해당파일로가서 연필 모양 클릭한다음 내용을 변경해주고 commit 누르고 git bash에서 git pull사용
 
-![Chinese Salty Egg](./2018-03-20(5).png)
+![Chinese Salty Egg](./2018-03-20(5).jpg)
 
     git pull
 

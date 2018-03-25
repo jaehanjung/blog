@@ -5,7 +5,7 @@ category: "javascript"
 thumbnail: "./javascript_img.jpg"
 ---
 
-###  modal 만들기
+### modal 만들기
 
 - 모달을 켜는 버튼을 처음 눌렀을때는 모달이 켜지고, 다시한번 눌렀을때는 모달이 닫히는 기능을 만들었다.
 

@@ -63,7 +63,7 @@ form.search>fieldset>legend 3개가 셋트다
 
 `required`는 이 입력 상자는 필수라는 뜻이다.
 
-![2018-03-23](./img/2018-03-23.png)
+![Chinese Salty Egg](./2018-03-23.png)
 
 `placeholder` input 태그 안에 글씨를 입력할수있다.
 

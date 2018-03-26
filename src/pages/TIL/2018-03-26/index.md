@@ -7,15 +7,15 @@ thumbnail: "./TIL.jpg"
 
 # HTML & CSS(목록,노멀라이즈,폰트)
 
-### 목록을 만드는 <ul> <ol> <li> 태그
+### 목록을 만드는 `<ul>` `<ol>` `<li>` 태그
 
-목록을 만들려면 <ul> <ol><dl >태그를 사용한다.
+목록을 만들려면 `<ul>` `<ol>` `<dl >`태그를 사용한다.
 
-1. <ol> 태그는 ordered list 의 약자로 숫자나 알바펫등 순서가 있는 목록을 만드는데 사용한다.
-2. <ul>태그는 unordered list 의 약자로 순서가 필요없는 목록을 만든다.
-3. <dl>태그는 definition list 의 약자로 사전처럼 용어를 설명하는 목록을 만든다.
+1. `<ol>` 태그는 ordered list 의 약자로 숫자나 알바펫등 순서가 있는 목록을 만드는데 사용한다.
+2. `<ul>`태그는 unordered list 의 약자로 순서가 필요없는 목록을 만든다.
+3. `<dl>`태그는 definition list 의 약자로 사전처럼 용어를 설명하는 목록을 만든다.
 
-<ol>과 <ul> 의 각항목들은 <li> 태그를 사용한다.
+`<ol>`과 `<ul>` 의 각항목들은 `<li>` 태그를 사용한다.
 
 
 
@@ -23,7 +23,7 @@ thumbnail: "./TIL.jpg"
 
 여러가지 브라우저들이가지고있는 버그나 오차를 줄이고싶으면 노멀라이즈 css파일을 연동해논다.
 
-[https://cdnjs.com/libraries/normalize]:
+https://cdnjs.com/libraries/normalize
 
 normalize 사이트에 들어가서
 
@@ -80,7 +80,7 @@ web font 는 다운로드를 받고 보여지기 때문에 느리다는 단점�
 
 ### cdn 구글폰트사용
 
-[https://fonts.google.com]:
+https://fonts.google.com
 
 원하는 글꼴을 선택후 +버튼은 누르면 설명이나온다.
 

@@ -104,7 +104,7 @@ title 의경우 중요한 핵심 키워드 로 사용하는게좋다.
          grid-template-rows: 20% 20% 20% 20% 20%;	 // 20% 씩 세로로 박스를 만든다.
          ```
 
-      2. grid-column-start 는 가로로 첫번째 에서 시작을 나타낸다.
+      2. `grid-column-start` 는 가로로 첫번째 에서 시작을 나타낸다.
 
       3. `grid-column-start`이 단독으로 사용될때는, 한개의 그리드 열(column)을 나타냅니다. 하지만, `grid-column-end` 속성을 같이 사용하면 여러 열(column)에 걸쳐 확장이 가능합니다. 음수로도 설정이 가능하다.
 

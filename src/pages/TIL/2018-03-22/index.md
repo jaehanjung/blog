@@ -25,7 +25,7 @@ data-* ->사용자정의
 
 ## head 설정
 
-```
+```html
 다음 2개의 meta 태그는 같은 인코딩 속성을 설정한다.
 
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -83,7 +83,7 @@ title 의경우 중요한 핵심 키워드 로 사용하는게좋다.
    1. header.header+nav.navigation
    2. main.main+article.slogan+footer.footer
 
-   ```
+   ```html
    <body>
        <div class="container">
            <header class="header">헤더</header>
@@ -99,7 +99,7 @@ title 의경우 중요한 핵심 키워드 로 사용하는게좋다.
 
    1. grid 속성
 
-      1. ```
+      1. ```html
          grid-template-columns: 20% 20% 20% 20% 20%;   // 20% 씩 가로로 박스를 만든다.
          grid-template-rows: 20% 20% 20% 20% 20%;	 // 20% 씩 세로로 박스를 만든다.
          ```
@@ -110,7 +110,7 @@ title 의경우 중요한 핵심 키워드 로 사용하는게좋다.
 
       4.  `grid-area`은 /(슬래쉬)로 구분지어 `grid-row-start`, `grid-column-start`, `grid-row-end`, `grid-column-end`순으로 입력 가능합니다.
 
-         ```
+         ```html
           grid-area:1/2/4/6   이런식으로 위에서부터 시작을 1번째 부터 그다음 옆으로 시작을 2번째 부터 그다음 높이의 끝이 4번째까지 그리고 옆으로 끝을 6번까지 실행
          ```
 

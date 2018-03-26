@@ -29,7 +29,7 @@ normalize 사이트에 들어가서
 
 https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css 를 카피하고 작성중인 css 파일에
 
-```
+```html
 @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css);
 ```
 
@@ -39,7 +39,7 @@ https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css 를 카피�
 
 normalize.css 파일에 붙여넣어줘도 된다.
 
-```
+```html
 @import url("./normalize.css");
 ```
 
@@ -49,13 +49,13 @@ normalize.css 파일에 붙여넣어줘도 된다.
 
 font 는 기본글꼴을 선언하는게 중요하다.
 
-```
+```html
 font-family: Arial, Helvetica, sans-serif;   // 우선순위
 ```
 
 *Android* ,*Windows*, *Mac OS* 에서 글꼴이 다다르다.
 
-```
+```html
 @font-face {
   font-family: 'Noto Sans Regular';// 이름은 사용자가 원하는 이름으로 바꿀수 있다.
   font-style: normal;
@@ -66,7 +66,7 @@ font-family: Arial, Helvetica, sans-serif;   // 우선순위
 
 font 파일 연결
 
-```
+```html
 @import url("./fonts.css");
 연결후에
 body 태그에
@@ -90,7 +90,7 @@ web font 는 다운로드를 받고 보여지기 때문에 느리다는 단점�
 
 ### ul태그에 블릭 , a태그에 밑줄을 없애준다.
 
-```
+```html
 /* 블릭기호 삭제 */
 
 ul{
@@ -105,7 +105,7 @@ text-decoration: none;
 
 ###  부모로 부터 상속받는 속성
 
-```
+```html
 color: inherit; // 폰트 컬러를 부모의 속성을 이어받는다.
 ```
 
@@ -113,7 +113,7 @@ color: inherit; // 폰트 컬러를 부모의 속성을 이어받는다.
 
 ### 숨김콘텐츠 모듈화
 
-```
+```html
 legend의경우 화면에 보이지 않게끔 만들어준다.
 
 읽어줄 목적으로만든 legend 이기 떄문에 display : none 은 권장하지 않는다.
@@ -151,7 +151,7 @@ legend{
 
    2. float을 가상 선택자 :after로 clear 하는 방법
 
-      ```
+      ```html
       1. .clearfix::after {
            content: "";
            clear: both;

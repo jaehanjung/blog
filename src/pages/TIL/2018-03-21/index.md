@@ -13,7 +13,7 @@ thumbnail: "./TIL.jpg"
 
 - for 문
 
-```
+```html
 for (let i = 0; i < 5; i++) { // (초기값; 조건; 갱신)
   console.log(`이 코드는 ${i + 1}번 째 실행되고 있습니다.`);
 }
@@ -22,7 +22,7 @@ for (let i = 0; i < 5; i++) { // (초기값; 조건; 갱신)
 
 - while 문
 
-```
+```html
 let i = 0;   //  변수 i
 while (i < 5) {  // 0 은 5보다 작으니까 true 실행된다.
   console.log('이 코드는 괄호 안의 값이 `true`인 한 계속 실행됩니다.')
@@ -35,7 +35,7 @@ while (i < 5) {  // 0 은 5보다 작으니까 true 실행된다.
 
 ### 함수 (function)
 
-```
+```html
 function add(x,y){   //  add 라는 이름을 가진 함수
   return x + y;     // 코드에 빈칸을 만들고 재사용 할 수 있는 코드가 함수이다.
 }
@@ -46,7 +46,7 @@ add(1,4)    // 함수에 이름에 (값) 을넣어주면 함수가 실행된다.
 
 // 브라우저 내장 함수인 `prompt`, `console.log`, `alert` 사용하기
 
-```
+```html
 const answer = prompt('이름이 무엇인가요?'); // answer 변수에 prompt : 팝업을띄우고 값을                                            //주 는 함수 를 담는다.
 console.log(answer);                       // 변수를 출력
 alert(answer);							// 경고창에 answer 의 값을 보여준다.
@@ -56,7 +56,7 @@ alert(answer);							// 경고창에 answer 의 값을 보여준다.
 
 객체는 이름과 값이있는 통이다.
 
-```
+```html
 // 객체의 생성
 const obj = {
   x: 0, // 객체의 속성. 속성 이름: x, 속성 값: 0
@@ -73,7 +73,7 @@ const obj = {
 
 배열에는 순서가 존재하며 , 이름대신에 인덱스를 이용해 값에 접근한다.
 
-```
+```html
 // 배열의 생성
 const arr = ['one', 'two', 'three'];
 
@@ -90,7 +90,7 @@ arr[1]; // === 'two'
 
 boolean 타입에 해당하는 값은 `true`, `false` 두 가지 밖에 없습니다. 이 값들을 '진리값'이라고 부릅니다.
 
-```
+```html
 1 < 2; // true
 1 > 2; // false
 3 === 3; // true   // === 같은지
@@ -102,7 +102,7 @@ Number.isNaN(NaN); // true
 
 #### 논리연산자
 
-```
+```html
 // 논리 부정 (logical NOT)
 !true; // false
 !false; // true
@@ -114,7 +114,7 @@ false ? 1 : 2; // 2   // false 면 뒤에 2가 출력된다.
 
 #### 연산자 우선순위
 
-```
+```html
 true || true && false; // true    // true && false 가먼저 실행되고 true || true 가 실행된다.
 (true || true) && false; // false   // 먼저 실행됫으면 좋겟다고 생각하면 () 를 사용
 
@@ -144,7 +144,7 @@ and && 는 하나만false면 false
 
 or  ||연산자는 처음으로 만나는 연산자 truthy 가 맞으면 앞의 truthy 가 반환한다.
 
-```
+```html
 1 || 0     // 1 이 출력됨.
 
 	// 처음으로오는값이 truthy 이면 앞에 truthy 가 출력된다.
@@ -156,7 +156,7 @@ or  ||연산자는 처음으로 만나는 연산자 truthy 가 맞으면 앞의 
 
 and  && 연산자는 처음으로 만나는 연산자가 truthy 이면 뒤에 오는 값을 반환한다.
 
-```
+```html
 ' ' && true = ''
 
   // ` ` 처음으로 오는값이 fasly 이면 앞의 처음오는 값이 출력된다.

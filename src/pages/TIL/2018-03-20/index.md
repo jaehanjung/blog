@@ -7,18 +7,18 @@ thumbnail: "./TIL.jpg"
 
 # Markdown
 
-```
+```html
 # 1단계 제목   / h1
 ## 2단계 제목  / h2
 ...
 ###### 6단계 제목  /h6
 ```
 
-![2018-03-20(3)](./img/2018-03-20(3).png)
+![Chinese Salty Egg](./img/2018-03-20(3).png)
 
 #### 글씨체
 
-```
+```html
 *이탤릭체*
 **볼드체**
 _밑줄_
@@ -27,11 +27,11 @@ _밑줄_
 > 인용문
 ```
 
-![2018-03-20(3)](./img/2018-03-20(2).png)
+![Chinese Salty Egg](./img/2018-03-20(2).png)
 
 #### 목록
 
-```
+```html
 - 목록은
 * 이런 식으로
 + 입력할 수 있습니다.
@@ -47,7 +47,8 @@ _밑줄_
 
 ctrl + shift + p 눌러서 >markdown preview  미리보기 열기 누르면 옆에 마크다운 문서를 미리볼수있다.
 
-![2018-03-20(3)](./img/2018-03-20(4).png)
+
+![Chinese Salty Egg](./img/2018-03-20(4).png)
 
 
 
@@ -70,7 +71,7 @@ Git 은 아래와 같은 정보를 관리한다.
 
 #### 폴더를 git 저장소로 만들어주는 명령어
 
-```
+```html
 git init : 해당폴더에 .git 폴더 생성
 
 깃에 저장하려면 그폴더에 git init 을 하여 저장소를 만들어 줘야한다.
@@ -84,7 +85,8 @@ git init : 해당폴더에 .git 폴더 생성
 
 ## Git에서 관리하는 세 영역
 
-![2018-03-20(3)](./img/git-scheme.png)
+![Chinese Salty Egg](./img/git-scheme.png)
+
 
 - 작업 디렉토리 (Working directory)
   - 현재 편집 중인 파일이 저장되는 영역
@@ -97,7 +99,7 @@ git init : 해당폴더에 .git 폴더 생성
 
 #### 폴더안에 있는 파일을 git이 관리하는 명령어
 
-```
+```html
 git add .  / 해당폴더에 git 관리
 
 git status     /  깃폴더내용의 확인
@@ -120,7 +122,7 @@ git log  /  저장내용이 저장되었는지 확인
 
 해당폴더에 git bash 를 키고
 
-```
+```html
 ssh-keyhen : 저장소의 키를 만든다.
 
 cat ~/.ssh/id_rsa.pub  : 생성된 일련번호 가 나온다.
@@ -141,7 +143,7 @@ cat ~/.ssh/id_rsa.pub  : 생성된 일련번호 가 나온다.
 
 밑에 보면 폴더이름과 주소가 있다.
 
-```
+```html
 git remote add origin git@github.com:jaehanjung/9-.gitgit push -u origin master
 ```
 
@@ -167,7 +169,7 @@ git push 내저장소에있는 커밋들을 원격 저장소에 보내라.
 
 이후에는
 
-```
+```html
 해당폴더에서 git add .
 
 git status 확인하고
@@ -184,9 +186,11 @@ git push  바로 push 하면 저장된다.
 
 다른 저장소에 있는 커밋을 내저장소로 하는방법은
 
-해당파일로가서 연필 모양 클릭한다음 내용을 변경해주고 commit 누르고 git bash에서 git pull사용![2018-03-20(3)](./img/2018-03-20(5).jpg)
+해당파일로가서 연필 모양 클릭한다음 내용을 변경해주고 commit 누르고 git bash에서 git pull사용
 
-```
+![Chinese Salty Egg](./img/2018-03-20(5).jpg)
+
+```html
 git pull
 ```
 
@@ -214,7 +218,7 @@ visual studio code 에서 3번째 소스제어 버튼 누르고 내용을 변경
 
 저장소의 상태가 잘보이기때문에 소스트리를 사용.
 
-```
+```html
 add 버튼을눌러 폴더를 정해주고 이름을 만든다.
 해당폴더에서 내용을 수정할수있다.
 ```

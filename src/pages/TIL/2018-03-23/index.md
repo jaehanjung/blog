@@ -38,7 +38,7 @@ thumbnail: "./TIL.jpg"
 
 `form`태그 안에 `fieldset `을 자식요소로 만들고 그안에 `legend` 를만든다.
 
-```
+```html
 form.search>fieldset>legend 3개가 셋트다
 ```
 
@@ -50,7 +50,7 @@ form.search>fieldset>legend 3개가 셋트다
 
 `label`의 for "" 는 input에 id 를 읽어옴으로써 두요소를 묶는다.
 
-```
+```html
 <form action="javascript:alert('검색이 완료되었습니다.');" class="search">
      <fieldset>
         <legend>검색 폼</legend>
@@ -67,7 +67,7 @@ form.search>fieldset>legend 3개가 셋트다
 
 `placeholder` input 태그 안에 글씨를 입력할수있다.
 
-```
+```html
 <input type="search" id="search" required placeholder="검색어를 입력하세요.">
 ```
 

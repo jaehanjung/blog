@@ -14,7 +14,7 @@ thumbnail: "./TIL.jpg"
 ###### 6단계 제목  /h6
 ```
 
-![Chinese Salty Egg](./img/2018-03-20(3).png)
+![Chinese Salty Egg](./2018-03-20(3).png)
 
 #### 글씨체
 
@@ -27,7 +27,7 @@ _밑줄_
 > 인용문
 ```
 
-![Chinese Salty Egg](./img/2018-03-20(2).png)
+![Chinese Salty Egg](./2018-03-20(2).png)
 
 #### 목록
 
@@ -48,7 +48,7 @@ _밑줄_
 ctrl + shift + p 눌러서 >markdown preview  미리보기 열기 누르면 옆에 마크다운 문서를 미리볼수있다.
 
 
-![Chinese Salty Egg](./img/2018-03-20(4).png)
+![Chinese Salty Egg](./2018-03-20(4).png)
 
 
 
@@ -85,7 +85,7 @@ git init : 해당폴더에 .git 폴더 생성
 
 ## Git에서 관리하는 세 영역
 
-![Chinese Salty Egg](./img/git-scheme.png)
+![Chinese Salty Egg](./git-scheme.png)
 
 
 - 작업 디렉토리 (Working directory)
@@ -188,7 +188,7 @@ git push  바로 push 하면 저장된다.
 
 해당파일로가서 연필 모양 클릭한다음 내용을 변경해주고 commit 누르고 git bash에서 git pull사용
 
-![Chinese Salty Egg](./img/2018-03-20(5).jpg)
+![Chinese Salty Egg](./2018-03-20(5).jpg)
 
 ```html
 git pull

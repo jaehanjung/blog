@@ -35,11 +35,11 @@ class BlogList extends React.Component {
               <a href="https://github.com/jaehanjung" className="fab fa-github git-button">GitHub</a>
             </p>
             <Link className="about-btn" to="/about">About Me</Link>
-            <div className="bgi-button">
+            {/* <div className="bgi-button">
               <button className="left-button"></button>
               <button className="center-button"></button>
               <button className="right-button"></button>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="section section2 clearfix">

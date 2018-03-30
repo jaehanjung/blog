@@ -17,7 +17,7 @@ display: grid;
 
   그리고 배치하고싶은 클래스마다  grid-area 를 사용하여 이름을 정해준다.
  .book{
-  grid-area: book; , , ;
+  grid-area: book;
  }
  .news{
   grid-area: news;
@@ -78,9 +78,3 @@ div전으로 묶으려면 dt와 dd 같이 묶어줘야한다.
                     <dd class="recommend-book-grade" aria-label="5점 만점에 4점">★★★★☆</dd>
      </dl>
 ```
-
-
-
-
-
-      ​

@@ -66,8 +66,7 @@ span보다 li태그에 tabindex를 주는이유는 자식요소를 알아서 선
 
 ### 배경이미지 사용
 
-1.   ​
-
+1.
   ```html
    일반적으로 이미지사용할때
      background-color: #988574;    //배경색
@@ -77,8 +76,7 @@ span보다 li태그에 tabindex를 주는이유는 자식요소를 알아서 선
      background-position: 50% 0%;  // 가운데 배치
   ```
 
-2.  ​
-
+2.
    ```html
    백그라운드 이미지 속기법
    background: #988574 url("../images/small.jpg") 100% 0% /200px no-repeat scroll;
@@ -88,8 +86,7 @@ span보다 li태그에 tabindex를 주는이유는 자식요소를 알아서 선
 
    ​
 
-3. ​
-
+3.
    ```html
    백그라운드 이미지로 linear-gradient 주기
    background-image: linear-gradient(180deg,  red, orange, yellow, green, blue, purple);
@@ -210,11 +207,3 @@ text-shadow: 1px 1px 10px #181818;   // x값 ,y값,클수록그림자가 더욱�
 
   /* 일시정지 */
   /* animation-play-state: paused; */
-
-
-
-```
-
-
-
-      ​

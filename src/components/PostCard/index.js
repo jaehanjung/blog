@@ -13,10 +13,11 @@ class PostCard extends React.Component {
     }
     return (
         <a href={this.props.link} className="card-box clearfix">
-              <img src={thumbnailImg} alt="" />
+              <div className="card-img" style={{backgroundImage: `url("${thumbnailImg}")`}}></div>
               <div className="card-box-text">
+                <p className="card-date">{this.props.date}</p>
                 <h3>{this.props.title}</h3>
-                <p>{this.props.content}</p>
+                <p className="card-box-p">{this.props.content}</p>
               </div>
             </a>
     );

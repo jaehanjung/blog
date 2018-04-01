@@ -3,7 +3,6 @@ import Link from 'gatsby-link';
 import get from 'lodash/get';
 import Pagination from '../components/Pagination';
 import ImgHeader from '../components/ImgHeader';
-import '../assets/css/postlist.css';
 import PostCard from '../components/PostCard';
 
 
@@ -18,13 +17,15 @@ class BlogList extends React.Component {
       <div>
         <ImgHeader />
         <div className="section section2">
-          <div className="posts content clearfix">
-            {edges.map((item, index) => {
-              return (<PostCard key={`postcard${index}`} title={item.node.frontmatter.title} content={item.node.excerpt} link={item.node.fields.slug} thumbnail={item.node.frontmatter.thumbnail} />)
-            })}
+          <div className="posts-list content clearfix">
+            <div className="post-list-box clearfix">
+              {edges.map((item, index) => {
+                return (<PostCard key={`postcard${index}`} date={item.node.frontmatter.date} title={item.node.frontmatter.title} content={item.node.excerpt} link={item.node.fields.slug} thumbnail={item.node.frontmatter.thumbnail} />)
+              })}
+            </div>
+            <Pagination category={pathContext.category} current={pathContext.current} totalPage={pathContext.totalPage} />
           </div>
         </div>
-        <Pagination category={pathContext.category} current={pathContext.current} totalPage={pathContext.totalPage} />
       </div>
 
     );

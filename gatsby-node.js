@@ -84,7 +84,7 @@ exports.createPages = ({ graphql, boundActionCreators, page }) => {
                 console.log(result.errors)
                 reject(result.errors)
               }
-              const postLimit = 15;
+              const postLimit = 12;
               const current = 1;
               const edge = result.data.allMarkdownRemark.edges;
               const totalPost = edge.length;

@@ -43,9 +43,9 @@ class BlogList extends React.Component {
           </div>
         </div>
         <div className="section section2 clearfix">
-          <div className="card-more content">
+          <div className="card-more content clearfix">
             { edges.map((item, index)=>{
-              return (<PostCard key={`postcard${index}s`} title={item.node.frontmatter.title} content={item.node.excerpt} link={item.node.fields.slug}  thumbnail={item.node.frontmatter.thumbnail}/>)
+              return (<PostCard key={`postcard${index}s`} date={item.node.frontmatter.date} title={item.node.frontmatter.title} content={item.node.excerpt} link={item.node.fields.slug}  thumbnail={item.node.frontmatter.thumbnail}/>)
             })}
           </div>
         </div>
@@ -68,7 +68,7 @@ query MainBlogList{
       }
     }
   }
-  allMarkdownRemark(sort: {fields:[frontmatter___date], order: DESC}, limit:  1000) {
+  allMarkdownRemark(sort: {fields:[frontmatter___date], order: DESC}, limit: 12) {
     edges {
       node {
         excerpt

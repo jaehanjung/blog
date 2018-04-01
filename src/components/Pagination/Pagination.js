@@ -22,6 +22,7 @@ const PagiNation = styled.div`
   text-align:center;
   padding: 40px 0;
   position: relative;
+  border-top: 1px solid #eeeeee;
   &::after{
     content:"";
     display:block;

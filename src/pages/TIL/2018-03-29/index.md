@@ -1,5 +1,5 @@
 ---
-title: 18.03.29 HTML & CSS(아웃라인,tabindex,애니메이션) 8일차
+title: HTML & CSS(아웃라인,tabindex,애니메이션) 8일차
 date: "2018-03-29"
 category: "TIL"
 thumbnail: "./TIL.jpg"

@@ -1,5 +1,5 @@
 ---
-title: 18.03.23 box-sizing,레이아웃,form태그 수업 5일차
+title: box-sizing,레이아웃,form태그 수업 5일차
 date: "2018-03-23"
 category: "TIL"
 thumbnail: "./TIL.jpg"

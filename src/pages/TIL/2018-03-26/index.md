@@ -1,5 +1,5 @@
 ---
-title: 18.03.26 HTML & CSS(목록,노멀라이즈,폰트) 수업 6일차
+title: HTML & CSS(목록,노멀라이즈,폰트) 수업 6일차
 date: "2018-03-26"
 category: "TIL"
 thumbnail: "./TIL.jpg"

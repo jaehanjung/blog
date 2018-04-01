@@ -1,5 +1,5 @@
 ---
-title: 18.03.30 grid,figure,정의형 목록 dl태그 9일차
+title: grid,figure,정의형 목록 dl태그 9일차
 date: "2018-03-30"
 category: "TIL"
 thumbnail: "./TIL.jpg"

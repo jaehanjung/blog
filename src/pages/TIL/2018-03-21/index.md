@@ -1,5 +1,5 @@
 ---
-title: 18.03.21 javascript 기초 수업 3일차
+title: javascript 기초 수업 3일차
 date: "2018-03-21"
 category: "TIL"
 thumbnail: "./TIL.jpg"

@@ -1,5 +1,5 @@
 ---
-title: 18.03.27 HTML & CSS(position,inline,ul,ol) 7일차
+title: HTML & CSS(position,inline,ul,ol) 7일차
 date: "2018-03-27"
 category: "TIL"
 thumbnail: "./TIL.jpg"

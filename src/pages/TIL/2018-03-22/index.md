@@ -1,5 +1,5 @@
 ---
-title: 18.03.22 html & css 수업 4일차
+title: html & css 수업 4일차
 date: "2018-03-22"
 category: "TIL"
 thumbnail: "./TIL.jpg"

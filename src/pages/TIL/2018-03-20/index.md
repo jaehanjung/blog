@@ -1,5 +1,5 @@
 ---
-title: 18.03.20 Markdown,git 초기설정 수업 2일차
+title: Markdown,git 초기설정 수업 2일차
 date: "2018-03-20"
 category: "TIL"
 thumbnail: "./TIL.jpg"

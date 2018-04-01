@@ -1,5 +1,5 @@
 ---
-title: 18.03.19 쉘과 명령어 수업 1일차
+title: 쉘과 명령어 수업 1일차
 date: "2018-03-19"
 category: "TIL"
 thumbnail: "./TIL.jpg"

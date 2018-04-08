@@ -60,6 +60,7 @@ a {
 .section:nth-of-type(2n) {
   /* background-color: gray; */
 }
+
 /* 본문 스타일 */
 
 body {
@@ -72,6 +73,7 @@ body {
 .section1 {
   background-image: url("/img/bg-img.png");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 595px;
   color: white;
@@ -347,4 +349,20 @@ body {
   height: 150px;
   background-image: url("https://source.unsplash.com/random/500x500");
   background-size: cover;
+}
+
+/* 모바일 디바이스 */
+@media screen and (max-width: 480px) {
+  .content {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  .card-box{
+    width: 100%;
+    margin-left: 0;
+  }
+  .menu-slide.active{
+    width: 30%;
+  }
 }
